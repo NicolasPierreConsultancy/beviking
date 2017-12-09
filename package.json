@@ -1,0 +1,22 @@
+{
+  "name": "beviking",
+  "version": "1.0.0",
+  "description": "Barbershop in Herent",
+  "main": "index.html",
+  "dependencies": {
+    "bootstrap": "^4.0.0-beta.2",
+    "jquery": "^3.2.1",
+    "popper.js": "^1.12.3"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nicolaspierre1990/beviking.git"
+  },
+  "author": "Nicolas Pierre",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nicolaspierre1990/beviking/issues"
+  },
+  "homepage": "https://www.beviking.be"
+}
