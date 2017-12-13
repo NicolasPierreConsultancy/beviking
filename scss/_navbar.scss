@@ -1,0 +1,22 @@
+/// <reference path="_mixins.scss" />
+
+#mainNav {
+    @include navigation-font;
+    color: #ffff !important;
+
+    .navbar-nav {
+        > li.nav-item {
+            > a.nav-link {
+                color: #fff;
+                font-size: 16px;
+                letter-spacing: 3px;
+                text-transform: lowercase;
+                padding: 10px 12px;
+                margin: 0 6px;
+                text-transform: lowercase;
+                text-decoration: none;
+                font-weight: 500;
+            }
+        }
+    }
+}

@@ -1,11 +1,126 @@
 /*!
- * Nicolas Pierre Consultancy- Be Viking v1.0.0 (https://www.beviking.be)
+ * Be Viking v1.0.0 (https://www.beviking.be)
  * Copyright 2017-2017 Nicolas Pierre
  * Licensed under MIT (https://github.com/beviking/beviking/blob/master/LICENSE)
  */
+@import url("https://fonts.googleapis.com/css?family=Crimson+Text|Poppins|Raleway");
+@import url("https://fonts.googleapis.com/css?family=Oswald");
+@import url("https://fonts.googleapis.com/css?family=Merriweather");
+body,
 html {
-  width: 100%;
-  height: 100%; }
+  font-size: 18px;
+  line-height: 24px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 100%;
+  color: #000000; }
+
+.main {
+  padding-top: 10rem;
+  background: url("../img/header.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  color: #fff;
+  height: 100vh;
+  padding-top: 50px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+  @media (min-width: 992px) {
+    .main {
+      height: 100vh;
+      min-height: 650px;
+      padding-top: 0;
+      padding-bottom: 0; } }
+  .main h1 {
+    font-family: 'Merriweather', sans-serif;
+    font-weight: 300;
+    line-height: 56px;
+    font-size: 18px; }
+    @media (min-width: 768px) {
+      .main h1 {
+        font-size: 25px;
+        letter-spacing: -0.3px; } }
+  .main .vcenter {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%); }
+
+/**
+ * Bootstrap No-Gutter Grid
+ */
+.row-no-gutter {
+  margin-right: 0;
+  margin-left: 0; }
+
+.row-no-gutter [class^="col-"],
+.row-no-gutter [class*=" col-"] {
+  padding-right: 0;
+  padding-left: 0; }
+
+.container-full {
+  padding-left: 0px;
+  padding-right: 0px;
+  width: 100%; }
+
+.section-title {
+  font-family: 'Merriweather', sans-serif;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: 3px;
+  font-style: italic;
+  color: #000000;
+  text-align: center; }
+
+.section-title:after,
+.section-title:before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 1px;
+  border-bottom: 1px solid #000000;
+  margin: 0 14px 4px; }
+
+footer {
+  border-top: 2px solid #000;
+  background-color: #000;
+  color: #fff;
+  font-family: 'Merriweather', sans-serif; }
+  footer .social-links {
+    list-style: none;
+    display: inline; }
+    footer .social-links li a {
+      font-size: 17px;
+      line-height: 32px;
+      letter-spacing: 2.35px;
+      color: #fff; }
+  footer .copyright {
+    border-top: 2px solid #F9F7F8;
+    background-color: #ffffff;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    color: #000; }
+  footer .voffset40 {
+    padding-bottom: 40px; }
+
+#mainNav {
+  font-family: 'Poppins', sans-serif;
+  color: #ffff !important; }
+  #mainNav .navbar-nav > li.nav-item > a.nav-link {
+    color: #fff;
+    font-size: 16px;
+    letter-spacing: 3px;
+    text-transform: lowercase;
+    padding: 10px 12px;
+    margin: 0 6px;
+    text-transform: lowercase;
+    text-decoration: none;
+    font-weight: 500; }
 
 /*
 =============================================================================================================
@@ -16,5 +131,3 @@ html {
 */
 #booking {
   width: 100%; }
-  #booking h1 {
-    font-size: 16px; }

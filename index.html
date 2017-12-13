@@ -1,16 +1,99 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <link rel="icon" type="image/png" href="favico.png">
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css"/>
-        <link rel="stylesheet" href="css/beviking.css"/>
-        <title>Be Viking</title>
-    </head>
-    <body>
-        <section class="container-fluid" id="booking">
-            <h1><span>Booking</span></h1>
-        </section>
-    </body>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <link rel="icon" type="image/png" href="favico.png">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="css/beviking.css" />
+    <title>Be Viking</title>
+</head>
+<body id="page-top">
+    <nav class="navbar navbar-expand-md fixed-top" id="mainNav">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#page-top">BE VIKING</a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" 
+                data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAT7SURBVGhD7Zl9qFVFFMWfH1l+ZFaiRCZlGhYGvgo0M80ehFAGRgRiIRn6hwYJ2h8ZBaWmmBSCioSFERlJWGol9KFhmJko/WNJKWKRCGIWht++12+Nax733nPexYd25gRvwWL22XufM+vee2Zmz9yGDnSgILS0tPRobm5eBU/AP+FSfH0d/v8A4R8gvIX2DDxv+xicjdnNaeUGYsdZ+N80N9MOgevkE7B/hROdXl4gcrMFz7UrANcD+HYrJmBvgY0Olw+IOweb0drLrlbg60xoKjziD3Mevg1vcEp5gKhfLPJ5mq52VwF/H+JL4GnnHocvwu5OSQ/EPA7PWeAeON6hDIgNhpXj5yCchNnJKWmBmAfhngvygsBN8A6HMyCldvx8C8sxftDTFTEzYBwPZ+FyzNz1BH8cP4ecX67xg6ba8VB3PcHfi/h8eML5Gj8rMIc7JS0QUzse6q4npAwk/iHUDBiAuQM+g5mZEQsHItq1npAylPgKePzCHQF/cf0mvNVpaYCQdo8HYt3hZPgljGWP7tsA73JaGqAlbzxk1hOub4GzYW9f3waXwfAr0QrvwevCDamAFo2HNVJjYVXrCe1a+1VJz4PX26+J5BUYP9BhmtGKJQVCRsLtEiVgf0+z2nZYZAVs/XKvw/6+bwDc5Nhp+HR4YEqgpRNCJsGDEiZgH4VjMEfTfg7jL6dXchHsA3XfgorYYpoufmw6IORK+Ah8QkLtDsDXCD+CcdAfgbMwu9E+CU/Zvx3qNRVkj/EjygW0DkfcZxItYGttmgZ32BXAdfxg2rGmneHqAXH354jXK7aW5mGoqXuV/e/7tnIBbVch7jmoGSsA+1PYiHk3rfAGHOvYNt9aDqDpCjgdYb9JoIC9GY5yin6p/lCVtxbS9c5Z6XBaoEVVwVNwn4QJ2BrITU6pAv6JcL9TlbuLJt2JDp1retWm7aegCGD/CCc4pQr474RbnFoF/JoU7nNqcaBTDdjKQnMv1LTc2SmtwNeX2HJ41rmamrUv0q94Rj4BW/gOTvat/x3oRDvNbe5bnR+AUzAzZwHyEZsJjzk3s5HjWl/IUcUjuFbhGWq4yw4efC/8yn2psz/gDMzczRix8bBya/0FzN1a41c58zGMi+nPNJlf9pLAA7XAbVQHArZeizkw93QFf7s2a5UgXa/gCNjTrksHD7udB2vxinWStsMvw6udUgVSVP4vhpXHSXMw0xzH0vEgBLwL4/HRP3AhzN1XkFKuAwo61nu6EoZZhPYUXApDWZ4HYirxf1C+gK21I82RER33g9prn7QYzSxvwZuckgGxG2Gbm65CQafX0vlrMO7k9EpoazrYKRkQU6GnbW+8R5Xrq/I7pTjQvwblSzDO7cI6OMwpuSCusiJsrHQDWIM50OHiQMf6NnVYEE4ZBWwVb/c4JRfEtWFqLSuwd8M0myE6boK/W4vEbKWpeyBAvLasOASnYl7ehepiQcda0OJubCd8yKFckKayQnuJ+Orp4GAJZtXWtnAg4hMLeoemC60q0NzTQPy1ZcV62ObgLxQIiTNMPxotXppp9jscILFwg/IE7Lr/oSQBgsKJIbjG1y/AabZ7w9pT+Wcxc//VSgqEfS2RYJFdGge1ZUXd/0lKAQSOhfFE8Btsrdp7fa0PoZP3Nv+5KhUQ+hhsXT8ErvfBiyqvSwVE94SP8hl0ytFEW75x0IEOFIWGhn8BqpRAm4ku++kAAAAASUVORK5CYII="/>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#booking">Book online</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+    <header class="container-full main d-flex">
+        <div class="row row-no-gutter">
+            <div class="vcenter text-center">
+                <h1>welcome to BEVIKING</h1>
+            </div>
+        </div>
+    </header>
+    <section class="container-full" id="services">
+        <h1 class="section-title"><span>Services</span></h1>
+        <div class="row row-no-gutter">
+            <div class="col-md-6">
+
+            </div>
+            <div class="col-md-6">
+
+            </div>
+        </div>
+    </section>
+    <section class="container-full" id="gallery">
+        <h1 class="section-title"><span>Gallery</span></h1>
+        <div class="row row-no-gutter">
+            <div class="col-md-6">
+
+            </div>
+            <div class="col-md-6">
+
+            </div>
+        </div>
+    </section>
+    <section class="container-full" id="booking">
+        <h1 class="section-title"><span>Booking</span></h1>
+        <div class="row">
+
+        </div>
+    </section>
+    <section class="container-full" id="contact">
+        <h1 class="section-title"><span>Contact</span></h1>
+        <div class="row">
+
+        </div>
+    </section>
+    <footer>
+        <div class="container-fluid">
+            <div class="col-md-12">
+                <ul class="social-links text-center">
+                    <li><a href="https://www.facebook.com/nicky.pierre.9" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="https://www.instagram.com/be.viking/?hl=nl" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <div class="voffset40"></div>
+            <p>&copy; 2017 BE VIKING all rights reserved. Website by <a href="http://www.nicolaspierre.net" target="_blank">Nicolas Pierre</a></p>
+            <div class="voffset40"></div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>    
+    <script src="node_modules/popper.js/dist/umd/popper.min.js" ></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
 </html>
