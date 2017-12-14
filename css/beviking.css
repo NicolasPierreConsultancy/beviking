@@ -49,6 +49,17 @@ html {
     top: 50%;
     transform: translateY(-50%);
     -webkit-transform: translateY(-50%); }
+    .main .vcenter .btn-main {
+      background: none;
+      cursor: pointer;
+      outline: none;
+      border-color: #ffffff;
+      color: #ffffff;
+      overflow: hidden;
+      z-index: 1; }
+      .main .vcenter .btn-main:hover {
+        color: #000;
+        background-color: white; }
 
 /**
  * Bootstrap No-Gutter Grid
@@ -91,13 +102,15 @@ footer {
   color: #fff;
   font-family: 'Merriweather', sans-serif; }
   footer .social-links {
-    list-style: none;
-    display: inline; }
-    footer .social-links li a {
-      font-size: 17px;
-      line-height: 32px;
-      letter-spacing: 2.35px;
-      color: #fff; }
+    list-style: none; }
+    footer .social-links > li {
+      display: inline-block; }
+      footer .social-links > li a {
+        padding: 15px;
+        font-size: 52px;
+        line-height: 32px;
+        letter-spacing: 2.35px;
+        color: #fff; }
   footer .copyright {
     border-top: 2px solid #F9F7F8;
     background-color: #ffffff;
@@ -110,7 +123,8 @@ footer {
 
 #mainNav {
   font-family: 'Poppins', sans-serif;
-  color: #ffff !important; }
+  color: #ffff !important;
+  background-color: #000; }
   #mainNav .navbar-nav > li.nav-item > a.nav-link {
     color: #fff;
     font-size: 16px;
@@ -121,6 +135,21 @@ footer {
     text-transform: lowercase;
     text-decoration: none;
     font-weight: 500; }
+  @media (min-width: 992px) {
+    #mainNav {
+      background-color: transparent;
+      border: none; }
+      #mainNav.shrink {
+        background-color: #000; } }
+
+#services {
+  padding-top: 90px; }
+
+#gallery {
+  padding-top: 90px; }
+
+#contact {
+  padding-top: 90px; }
 
 /*
 =============================================================================================================
@@ -130,4 +159,15 @@ footer {
 =============================================================================================================
 */
 #booking {
-  width: 100%; }
+  width: 100%;
+  padding-top: 90px; }
+  #booking .calender {
+    margin-left: 10px;
+    margin-right: 10px; }
+    #booking .calender #bookingCalender {
+      font-family: 'Merriweather', sans-serif;
+      width: 100%; }
+      #booking .calender #bookingCalender thead {
+        color: #ffffff;
+        text-transform: uppercase;
+        text-align: center; }

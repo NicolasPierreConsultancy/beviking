@@ -3,6 +3,7 @@
 #mainNav {
     @include navigation-font;
     color: #ffff !important;
+    background-color: #000;
 
     .navbar-nav {
         > li.nav-item {
@@ -17,6 +18,15 @@
                 text-decoration: none;
                 font-weight: 500;
             }
+        }
+    }
+
+    @include screen('desktop') {
+        background-color: transparent;
+        border: none;
+
+        &.shrink{
+            background-color: #000;
         }
     }
 }

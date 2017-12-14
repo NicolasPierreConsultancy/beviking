@@ -11,4 +11,21 @@
 
 #booking{
     width: 100%;
+    padding-top: 90px;
+
+    .calender{
+        margin-left: 10px;
+        margin-right: 10px;
+
+        #bookingCalender{
+            @include text-font;
+            width: 100%;
+
+            thead{
+                color: #ffffff;
+                text-transform: uppercase;
+                text-align: center;
+            }
+        }
+    }
 }

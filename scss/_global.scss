@@ -47,6 +47,20 @@ html{
         top: 50%;
         transform: translateY(-50%);
         -webkit-transform: translateY(-50%);
+
+        .btn-main{
+            background: none;
+            cursor: pointer;
+            outline: none;
+            border-color: #ffffff;
+            color: #ffffff;
+            overflow: hidden;
+            z-index: 1;
+            &:hover{
+                color: #000;
+                background-color: white;
+            }
+        }
     }
 }
 
@@ -95,11 +109,13 @@ footer {
 
     .social-links{
         list-style: none;
-        display: inline;
 
-        li{
+        > li{
+            display: inline-block;
+
             a{
-                font-size: 17px;
+                padding: 15px;
+                font-size: 52px;
                 line-height: 32px;
                 letter-spacing: 2.35px;
                 color: #fff;
@@ -115,6 +131,7 @@ footer {
         position: relative;
         overflow: hidden;
         color: #000;
+
     }
 
     .voffset40 {
