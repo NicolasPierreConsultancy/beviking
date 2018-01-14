@@ -30,7 +30,13 @@ gulp.task('sass', function() {
         '!**/bootstrap-theme.*',
         '!**/*.map'
       ])
-      .pipe(gulp.dest('vendor/bootstrap'))
+      .pipe(gulp.dest('vendor/bootstrap'));
+
+    gulp.src('node_modules/fullcalendar/dist/*.min.*')
+      .pipe(gulp.dest('vendor/fullcalendar'));
+
+    gulp.src('node_modules/moment/min/moment.min.js')
+      .pipe(gulp.dest('vendor/moment'));
 
     gulp.src('node_modules/popper.js/dist/umd/popper.min.js')
       .pipe(gulp.dest('vendor/popper'));

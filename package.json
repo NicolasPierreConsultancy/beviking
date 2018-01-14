@@ -5,8 +5,9 @@
   "description": "Barbershop in Herent",
   "main": "index.html",
   "dependencies": {
-    "bootstrap": "^4.0.0-beta.2",
+    "bootstrap": "^4.0.0-beta.3",
     "font-awesome": "^4.7.0",
+    "fullcalendar": "^3.8.0",
     "gulp": "^3.9.1",
     "gulp-header": "^1.8.9",
     "gulp-sass": "^3.1.0",
@@ -15,7 +16,7 @@
     "jquery-easing": "0.0.1",
     "jquery-waypoints": "^2.0.5",
     "jquery.easing": "^1.4.1",
-    "popper.js": "^1.12.3"
+    "popper.js": "^1.13.0"
   },
   "devDependencies": {},
   "repository": {

@@ -1,6 +1,6 @@
 /*!
  * Be Viking v1.0.0 (https://www.beviking.be)
- * Copyright 2017-2017 Nicolas Pierre
+ * Copyright 2017-2018 Nicolas Pierre
  * Licensed under MIT (https://github.com/beviking/beviking/blob/master/LICENSE)
  */
 @import url("https://fonts.googleapis.com/css?family=Crimson+Text|Poppins|Raleway");
@@ -158,16 +158,10 @@ footer {
 
 =============================================================================================================
 */
-#booking {
-  width: 100%;
-  padding-top: 90px; }
-  #booking .calender {
-    margin-left: 10px;
-    margin-right: 10px; }
-    #booking .calender #bookingCalender {
-      font-family: 'Merriweather', sans-serif;
-      width: 100%; }
-      #booking .calender #bookingCalender thead {
-        color: #ffffff;
-        text-transform: uppercase;
-        text-align: center; }
+/* Override fullcalendar */
+.fc-day-top {
+  margin-top: 10px;
+  vertical-align: middle !important;
+  text-align: center; }
+  .fc-day-top .fc-day-number {
+    float: none !important; }
