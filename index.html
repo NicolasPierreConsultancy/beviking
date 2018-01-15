@@ -12,7 +12,7 @@
 </head>
 <body id="page-top">
     <nav class="navbar navbar-expand-md fixed-top" id="mainNav">
-        <div class="container-fluid">
+        <div class="container">
             <a class="navbar-brand" href="#page-top">BE VIKING</a>
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" 
                 data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -21,16 +21,16 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#services">Services</a>
+                        <a class="nav-link js-scroll-trigger" href="#services">Services</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#services">Gallery</a>
+                        <a class="nav-link js-scroll-trigger" href="#gallery">Gallery</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#booking">Book online</a>
+                        <a class="nav-link js-scroll-trigger" href="#booking">Book online</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
+                        <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -42,33 +42,59 @@
             <div class="vcenter text-center">
                 <h3>welcome to BEVIKING</h3>
                 <h1>Barbershop - Downtown Herent</h1>
-                <a href="#booking" class="btn btn-main">Book Now</a>
+                <a href="#booking" class="btn btn-main js-scroll-trigger">Book Now</a>
             </div>
         </div>
     </header>
-    <section class="container-full" id="services">
+    <section class="container-fluid" id="services">
         <h1 class="section-title"><span>Services</span></h1>
         <div class="row row-no-gutter">
-            <div class="col-md-6">
-
+            <div class="col-sm-3">
+                <div class="service-container">
+                    <img class="img-fluid rounded mx-auto d-block" src="img/hair.png"/>
+                    <h4 class="service-title">Hair</h4>
+                    <p class="service-text">Awesome and professional Haircut for only €25</p>
+                    <div class="text-center">
+                        <a id="servicebtn" href="#booking" class="btn btn-main js-scroll-trigger">Book Now</a>
+                    </div>
+                </div>
             </div>
-            <div class="col-md-6">
-
+            <div class="col-sm-3">
+                <div class="service-container">
+                    <img class="img-fluid rounded mx-auto d-block" src="img/razors.png"/>
+                    <h4 class="service-title">Beard</h4>
+                    <p class="service-text">Awesome and professional Face Shave for only €20</p>
+                    <div class="text-center">
+                       <a id="servicebtn" href="#booking" class="btn btn-main js-scroll-trigger">Book Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="service-container">
+                    <img class="img-fluid rounded mx-auto d-block" src="img/hairandbeard.png"/>
+                    <h4 class="service-title">Hair &amp; Shave</h4>
+                    <p class="service-text">Awesome and professional Haircut and Face Shave for only €45</p>
+                    <div class="text-center">
+                        <a id="servicebtn" href="#booking" class="btn btn-main js-scroll-trigger">Book Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="service-container">
+                    <img class="img-fluid rounded mx-auto d-block" src="img/shaver.png"/>
+                    <h4 class="service-title">Buzz</h4>
+                    <p class="service-text">Awesome and professional Buzzcut for only €15</p>
+                    <div class="text-center">
+                        <a id="servicebtn" href="#booking" class="btn btn-main js-scroll-trigger">Book Now</a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
-    <section class="container-full" id="gallery">
+    <section class="container-fluid" id="gallery">
         <h1 class="section-title"><span>Gallery</span></h1>
-        <div class="row row-no-gutter">
-            <div class="col-md-6">
-
-            </div>
-            <div class="col-md-6">
-
-            </div>
-        </div>
     </section>
-    <section class="container-full" id="booking">
+    <section class="container-fluid" id="booking">
         <h1 class="section-title"><span>Booking</span></h1>
         <div class="row justify-content-center">
            <div class="col-md-8">
@@ -82,23 +108,31 @@
 
         </div>
     </section>
+    <div id="map"></div>
     <footer>
-        <div class="container-fluid">
+        <div class="container">
+            <ul class="list-inline">
+                <li class="list-inline-item">
+                    <a href="https://www.facebook.com/nicky.pierre.9" target="_blank"><i class="fa fa-facebook"></i></a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="https://www.instagram.com/be.viking/?hl=nl" target="_blank"><i class="fa fa-instagram"></i></a>
+                </li>
+            </ul>
+            <p>&copy; 2017 BE VIKING all rights reserved. Website by <a href="http://www.nicolaspierre.net" target="_blank">Nicolas Pierre</a></p>
+        </div>
+        <!--<div class="container-fluid">
             <div class="col-md-12">
                 <ul class="social-links text-center">
                     <li><a href="https://www.facebook.com/nicky.pierre.9" target="_blank"><i class="fa fa-facebook"></i></a></li>
                     <li><a href="https://www.instagram.com/be.viking/?hl=nl" target="_blank"><i class="fa fa-instagram"></i></a></li>
                 </ul>
             </div>
-        </div>
-        <!--<div class="copyright">
-            <div class="voffset40"></div>
-            <p>&copy; 2017 BE VIKING all rights reserved. Website by <a href="http://www.nicolaspierre.net" target="_blank">Nicolas Pierre</a></p>
-            <div class="voffset40"></div>
         </div>-->
     </footer>
 
     <script src="vendor/jquery/jquery.min.js"></script>    
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDY4fB9PE8laWTRZ88KNeNH4T_T5qASxjg"></script>
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
     <script src="vendor/jquery-waypoints/waypoints.min.js"></script>
     <script src="vendor/popper/popper.min.js" ></script>

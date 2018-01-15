@@ -35,7 +35,7 @@ html {
       padding-top: 0;
       padding-bottom: 0; } }
   .main h1 {
-    font-family: 'Merriweather', sans-serif;
+    font-family: 'Oswald', sans-serif;
     font-weight: 300;
     line-height: 56px;
     font-size: 18px; }
@@ -79,13 +79,14 @@ html {
   width: 100%; }
 
 .section-title {
-  font-family: 'Merriweather', sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-size: 15px;
   line-height: 18px;
   letter-spacing: 3px;
   font-style: italic;
   color: #000000;
-  text-align: center; }
+  text-align: center;
+  margin-bottom: 45px; }
 
 .section-title:after,
 .section-title:before {
@@ -97,34 +98,21 @@ html {
   margin: 0 14px 4px; }
 
 footer {
-  border-top: 2px solid #000;
-  background-color: #000;
-  color: #fff;
-  font-family: 'Merriweather', sans-serif; }
-  footer .social-links {
-    list-style: none; }
-    footer .social-links > li {
-      display: inline-block; }
-      footer .social-links > li a {
-        padding: 15px;
-        font-size: 52px;
-        line-height: 32px;
-        letter-spacing: 2.35px;
-        color: #fff; }
-  footer .copyright {
-    border-top: 2px solid #F9F7F8;
-    background-color: #ffffff;
-    text-align: center;
-    position: relative;
-    overflow: hidden;
-    color: #000; }
-  footer .voffset40 {
-    padding-bottom: 40px; }
+  padding: 25px 0;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #222; }
+  footer p {
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+    margin: 0; }
 
 #mainNav {
   font-family: 'Poppins', sans-serif;
+  width: 100%;
   color: #ffff !important;
-  background-color: #000; }
+  background-color: #222;
+  min-height: 42px; }
   #mainNav .navbar-nav > li.nav-item > a.nav-link {
     color: #fff;
     font-size: 16px;
@@ -139,11 +127,38 @@ footer {
     #mainNav {
       background-color: transparent;
       border: none; }
-      #mainNav.shrink {
-        background-color: #000; } }
+      #mainNav.navbar-shrink {
+        background-color: #222; } }
 
 #services {
   padding-top: 90px; }
+  #services div[class*="col-"] {
+    min-height: 300px; }
+    #services div[class*="col-"] .service-container :after {
+      content: "";
+      position: absolute;
+      width: 2px;
+      height: 100%;
+      right: 0;
+      top: 0;
+      background-color: #f8f8f8; }
+    #services div[class*="col-"] .service-container .service-title {
+      font-family: 'Oswald', sans-serif;
+      font-size: 24px;
+      letter-spacing: -0.3px;
+      color: #373C42;
+      font-weight: 700;
+      text-align: center;
+      margin-top: 40px;
+      margin-bottom: 30px; }
+    #services div[class*="col-"] .service-container .service-text {
+      font-family: 'Oswald', sans-serif;
+      font-size: 15px;
+      font-weight: 400;
+      letter-spacing: 3.6px;
+      line-height: 30px;
+      color: #666666;
+      text-align: center; }
 
 #gallery {
   padding-top: 90px; }
@@ -158,10 +173,16 @@ footer {
 
 =============================================================================================================
 */
+#booking {
+  padding-top: 90px; }
+
 /* Override fullcalendar */
 .fc-day-top {
-  margin-top: 10px;
   vertical-align: middle !important;
   text-align: center; }
   .fc-day-top .fc-day-number {
     float: none !important; }
+
+#map {
+  height: 400px;
+  width: 100%; }

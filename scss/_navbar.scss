@@ -2,8 +2,10 @@
 
 #mainNav {
     @include navigation-font;
+    width: 100%;
     color: #ffff !important;
-    background-color: #000;
+    background-color: #222;
+    min-height: 42px;
 
     .navbar-nav {
         > li.nav-item {
@@ -25,8 +27,8 @@
         background-color: transparent;
         border: none;
 
-        &.shrink{
-            background-color: #000;
+        &.navbar-shrink {
+            background-color: #222;
         }
     }
 }
