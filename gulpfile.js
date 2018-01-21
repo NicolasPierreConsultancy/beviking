@@ -59,4 +59,4 @@ gulp.task('sass', function() {
         '!node_modules/font-awesome/*.json'
       ])
       .pipe(gulp.dest('vendor/font-awesome'))
-  })
+  });
