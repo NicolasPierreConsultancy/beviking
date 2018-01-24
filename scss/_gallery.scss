@@ -1,3 +1,21 @@
-#gallery{
+#gallery {
     padding-top: 90px;
+
+    .filter-control {
+        a {
+            color: #000;
+            font-size: 16px;
+            letter-spacing: 3px;
+            text-transform: lowercase;
+            padding: 10px 12px;
+            margin: 0 6px;
+            text-transform: lowercase;
+            text-decoration: none;
+            font-weight: 500;
+
+            &:hover, &:focus, &.active {
+                color: $brand-color;
+            }
+        }
+    }
 }

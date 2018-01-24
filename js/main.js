@@ -40,30 +40,22 @@
     // Collapse the navbar when page is scrolled
     $(window).scroll(navbarCollapse);
 
-    InitializeBookingCalendar();
+    $('.filter-button').on('click', function(){
+        var value = $(this).attr('data-filter');
+        if(value == "all")  {
+            $('.filter').show('1000');
+        }
+        else {
+            $(".filter").not('.'+value).hide('3000');
+            $('.filter').filter('.'+value).show('3000');
+        }
+        $('.filter-button.active').removeClass('active');
+        $(this).addClass('active');
+    });
+
     initMap();
 
 })(jQuery);
-
-/* Section: Booking */
-function InitializeBookingCalendar() {
-    var calendar = $("#bookingCalendar").fullCalendar({
-        header:{
-            left: 'prev',
-            center: 'title',
-            right: 'next'
-        },
-        allDaySlot: false,
-        fixedWeekCount: false,
-        selectable: true,
-        firstDay: 1,
-        selectHelper: true,
-		select: function(start, end, allDay) {
-            //show detail
-            console.log(allDay.target);
-		}
-    });
-}
 
 /* ---- Google Maps ---- */
 function initMap() {

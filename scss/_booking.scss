@@ -7,16 +7,37 @@
 
 =============================================================================================================
 */
-#booking{
+#booking {
     padding-top: 90px;
-}
 
-/* Override fullcalendar */
-.fc-day-top{
-    vertical-align: middle !important;
-    text-align: center;
-    .fc-day-number{
+    .barber-image {
+        img {
+            height: 300px;
 
-        float: none !important;
+            @include screen('mobile'){
+                margin-bottom: 30px;
+            }
+        }
+    }
+
+    .barber-text {
+        h2 {
+            @include text-font;
+            font-size: 24px;
+            letter-spacing: -0.3px;
+            color: #373C42;
+            font-weight: 700;
+            text-align: center;
+        }
+
+        p {
+            @include text-font;
+            font-size: 15px;
+            font-weight: 400;
+            letter-spacing: 3.6px;
+            line-height: 30px;
+            color: #666666;
+            text-align: center;
+        }
     }
 }

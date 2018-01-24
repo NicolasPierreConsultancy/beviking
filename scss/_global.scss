@@ -57,8 +57,9 @@ html{
             overflow: hidden;
             z-index: 1;
             &:hover{
-                color: #000;
-                background-color: white;
+                color: #fff;
+                background-color: $brand-color;
+                border-color: $brand-color;
             }
         }
     }

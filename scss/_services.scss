@@ -34,6 +34,17 @@
                 color: #666666;
                 text-align: center;
             }   
+
+            #servicebtn{
+                border: 1px solid $brand-color;
+                text-decoration: none;
+                color: $brand-color;
+
+                &:hover, &:focus{
+                    background-color: $brand-color;
+                    color: #fff;
+                }
+            }
         }
     }
 }

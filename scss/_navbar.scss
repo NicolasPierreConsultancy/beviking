@@ -1,4 +1,5 @@
 /// <reference path="_mixins.scss" />
+$animate: all 0.2s ease-in-out;
 
 #mainNav {
     @include navigation-font;
@@ -7,9 +8,23 @@
     background-color: #222;
     min-height: 42px;
 
+    .navbar-brand {
+        color: #fff;
+        font-size: 16px;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-weight: 500;
+        letter-spacing: 3px;
+        @include navigation-font;
+
+        &:hover {
+            color: $brand-color;
+        }
+    }
+
     .navbar-nav {
-        > li.nav-item {
-            > a.nav-link {
+        .nav-item {
+            a {
                 color: #fff;
                 font-size: 16px;
                 letter-spacing: 3px;
@@ -19,16 +34,52 @@
                 text-transform: lowercase;
                 text-decoration: none;
                 font-weight: 500;
+                &:hover, &:focus, &.active{
+                    color: $brand-color;
+                }
             }
         }
     }
+}
 
+#mainNav {
     @include screen('desktop') {
         background-color: transparent;
         border: none;
 
         &.navbar-shrink {
             background-color: #222;
+        }
+
+        .navbar-nav {
+            .nav-item {
+                a {
+                    &:before,
+                    &:after {
+                        content: "";
+                        position: absolute;
+                        bottom: -10px;
+                        width: 0px;
+                        height: 5px;
+                        margin: 5px 0 0;
+                        transition: $animate;
+                        transition-duration: 0.75s;
+                        opacity: 0;
+                    }
+
+                    &:before {
+                        left: calc(50%);
+                        //width: 50%;
+                        background-color: $brand-color;
+                    }
+
+                    &:after {
+                        right: calc(50%);
+                        //width: 50%;
+                        background-color: $brand-color;
+                    }
+                }
+            }
         }
     }
 }

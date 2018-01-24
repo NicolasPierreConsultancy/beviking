@@ -58,8 +58,9 @@ html {
       overflow: hidden;
       z-index: 1; }
       .main .vcenter .btn-main:hover {
-        color: #000;
-        background-color: white; }
+        color: #fff;
+        background-color: #b59472;
+        border-color: #b59472; }
 
 /**
  * Bootstrap No-Gutter Grid
@@ -113,7 +114,17 @@ footer {
   color: #ffff !important;
   background-color: #222;
   min-height: 42px; }
-  #mainNav .navbar-nav > li.nav-item > a.nav-link {
+  #mainNav .navbar-brand {
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 3px;
+    font-family: 'Poppins', sans-serif; }
+    #mainNav .navbar-brand:hover {
+      color: #b59472; }
+  #mainNav .navbar-nav .nav-item a {
     color: #fff;
     font-size: 16px;
     letter-spacing: 3px;
@@ -123,12 +134,31 @@ footer {
     text-transform: lowercase;
     text-decoration: none;
     font-weight: 500; }
-  @media (min-width: 992px) {
-    #mainNav {
-      background-color: transparent;
-      border: none; }
-      #mainNav.navbar-shrink {
-        background-color: #222; } }
+    #mainNav .navbar-nav .nav-item a:hover, #mainNav .navbar-nav .nav-item a:focus, #mainNav .navbar-nav .nav-item a.active {
+      color: #b59472; }
+
+@media (min-width: 992px) {
+  #mainNav {
+    background-color: transparent;
+    border: none; }
+    #mainNav.navbar-shrink {
+      background-color: #222; }
+    #mainNav .navbar-nav .nav-item a:before, #mainNav .navbar-nav .nav-item a:after {
+      content: "";
+      position: absolute;
+      bottom: -10px;
+      width: 0px;
+      height: 5px;
+      margin: 5px 0 0;
+      transition: all 0.2s ease-in-out;
+      transition-duration: 0.75s;
+      opacity: 0; }
+    #mainNav .navbar-nav .nav-item a:before {
+      left: calc(50%);
+      background-color: #b59472; }
+    #mainNav .navbar-nav .nav-item a:after {
+      right: calc(50%);
+      background-color: #b59472; } }
 
 #services {
   padding-top: 90px; }
@@ -159,12 +189,47 @@ footer {
       line-height: 30px;
       color: #666666;
       text-align: center; }
+    #services div[class*="col-"] .service-container #servicebtn {
+      border: 1px solid #b59472;
+      text-decoration: none;
+      color: #b59472; }
+      #services div[class*="col-"] .service-container #servicebtn:hover, #services div[class*="col-"] .service-container #servicebtn:focus {
+        background-color: #b59472;
+        color: #fff; }
 
 #gallery {
   padding-top: 90px; }
+  #gallery .filter-control a {
+    color: #000;
+    font-size: 16px;
+    letter-spacing: 3px;
+    text-transform: lowercase;
+    padding: 10px 12px;
+    margin: 0 6px;
+    text-transform: lowercase;
+    text-decoration: none;
+    font-weight: 500; }
+    #gallery .filter-control a:hover, #gallery .filter-control a:focus, #gallery .filter-control a.active {
+      color: #b59472; }
 
 #contact {
-  padding-top: 90px; }
+  padding-top: 90px;
+  padding-bottom: 10px; }
+  #contact .form-control {
+    border: 0;
+    border-bottom: 2px solid #b59472;
+    background-color: transparent;
+    box-shadow: none;
+    border-radius: 0; }
+  #contact textarea {
+    resize: none; }
+  #contact .btn-send {
+    border-color: #b59472;
+    background: transparent;
+    color: #b59472; }
+    #contact .btn-send:hover {
+      background-color: #b59472;
+      color: #fff; }
 
 /*
 =============================================================================================================
@@ -175,13 +240,26 @@ footer {
 */
 #booking {
   padding-top: 90px; }
-
-/* Override fullcalendar */
-.fc-day-top {
-  vertical-align: middle !important;
-  text-align: center; }
-  .fc-day-top .fc-day-number {
-    float: none !important; }
+  #booking .barber-image img {
+    height: 300px; }
+    @media (max-width: 767px) {
+      #booking .barber-image img {
+        margin-bottom: 30px; } }
+  #booking .barber-text h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 24px;
+    letter-spacing: -0.3px;
+    color: #373C42;
+    font-weight: 700;
+    text-align: center; }
+  #booking .barber-text p {
+    font-family: 'Oswald', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 3.6px;
+    line-height: 30px;
+    color: #666666;
+    text-align: center; }
 
 #map {
   height: 400px;
