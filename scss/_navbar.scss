@@ -18,7 +18,7 @@ $animate: all 0.2s ease-in-out;
         @include navigation-font;
 
         &:hover {
-            color: $brand-color;
+            color: $brand-header;
         }
     }
 
@@ -35,7 +35,7 @@ $animate: all 0.2s ease-in-out;
                 text-decoration: none;
                 font-weight: 500;
                 &:hover, &:focus, &.active{
-                    color: $brand-color;
+                    color: $brand-header;
                 }
             }
         }
@@ -70,13 +70,13 @@ $animate: all 0.2s ease-in-out;
                     &:before {
                         left: calc(50%);
                         //width: 50%;
-                        background-color: $brand-color;
+                        background-color: $brand-header;
                     }
 
                     &:after {
                         right: calc(50%);
                         //width: 50%;
-                        background-color: $brand-color;
+                        background-color: $brand-header;
                     }
                 }
             }

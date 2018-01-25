@@ -59,8 +59,8 @@ html {
       z-index: 1; }
       .main .vcenter .btn-main:hover {
         color: #fff;
-        background-color: #b59472;
-        border-color: #b59472; }
+        background-color: #2B1D11;
+        border-color: #2B1D11; }
 
 /**
  * Bootstrap No-Gutter Grid
@@ -190,11 +190,11 @@ footer {
       color: #666666;
       text-align: center; }
     #services div[class*="col-"] .service-container #servicebtn {
-      border: 1px solid #b59472;
+      border: 1px solid #2B1D11;
       text-decoration: none;
-      color: #b59472; }
+      color: #2B1D11; }
       #services div[class*="col-"] .service-container #servicebtn:hover, #services div[class*="col-"] .service-container #servicebtn:focus {
-        background-color: #b59472;
+        background-color: #2B1D11;
         color: #fff; }
 
 #gallery {
@@ -210,25 +210,25 @@ footer {
     text-decoration: none;
     font-weight: 500; }
     #gallery .filter-control a:hover, #gallery .filter-control a:focus, #gallery .filter-control a.active {
-      color: #b59472; }
+      color: #2B1D11; }
 
 #contact {
   padding-top: 90px;
   padding-bottom: 10px; }
   #contact .form-control {
     border: 0;
-    border-bottom: 2px solid #b59472;
+    border-bottom: 2px solid #2B1D11;
     background-color: transparent;
     box-shadow: none;
     border-radius: 0; }
   #contact textarea {
     resize: none; }
   #contact .btn-send {
-    border-color: #b59472;
+    border-color: #2B1D11;
     background: transparent;
-    color: #b59472; }
+    color: #2B1D11; }
     #contact .btn-send:hover {
-      background-color: #b59472;
+      background-color: #2B1D11;
       color: #fff; }
 
 /*
