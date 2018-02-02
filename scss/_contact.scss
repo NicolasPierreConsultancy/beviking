@@ -11,7 +11,8 @@
     }
 
     textarea{
-        resize: none; 
+        height: inherit;
+        resize: none;
     }
 
     .btn-send{
@@ -23,5 +24,18 @@
             background-color: $brand-color;
             color: #fff;
         }
+    }
+
+    address{
+        padding: 10px;
+        @include text-font;
+        p{
+            margin-bottom: 0;
+        }
+    }
+
+    #contactBox{
+        padding: 10px;
+        margin-bottom: 30px;
     }
 }

@@ -16,6 +16,7 @@
 
             @include screen('mobile'){
                 margin-bottom: 30px;
+                height: 200px !important;
             }
         }
     }
@@ -37,7 +38,21 @@
             letter-spacing: 3.6px;
             line-height: 30px;
             color: #666666;
-            text-align: center;
+        }
+
+        .btn-main{
+            background: none;
+            cursor: pointer;
+            outline: none;
+            border-color: $brand-color;
+            color: $brand-color;
+            overflow: hidden;
+            z-index: 1;
+            &:hover{
+                color: #fff;
+                background-color: $brand-color;
+                border-color: $brand-color;
+            }
         }
     }
 }

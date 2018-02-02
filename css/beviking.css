@@ -38,11 +38,12 @@ html {
     font-family: 'Oswald', sans-serif;
     font-weight: 300;
     line-height: 56px;
-    font-size: 18px; }
+    font-size: 28px; }
     @media (min-width: 768px) {
       .main h1 {
-        font-size: 25px;
-        letter-spacing: -0.3px; } }
+        font-size: 60px;
+        letter-spacing: -0.3px;
+        margin-bottom: 20px; } }
   .main .vcenter {
     width: 100%;
     position: absolute;
@@ -210,7 +211,8 @@ footer {
     text-decoration: none;
     font-weight: 500; }
     #gallery .filter-control a:hover, #gallery .filter-control a:focus, #gallery .filter-control a.active {
-      color: #2B1D11; }
+      color: #2B1D11;
+      border-bottom: 1px solid #2B1D11; }
 
 #contact {
   padding-top: 90px;
@@ -222,6 +224,7 @@ footer {
     box-shadow: none;
     border-radius: 0; }
   #contact textarea {
+    height: inherit;
     resize: none; }
   #contact .btn-send {
     border-color: #2B1D11;
@@ -230,6 +233,14 @@ footer {
     #contact .btn-send:hover {
       background-color: #2B1D11;
       color: #fff; }
+  #contact address {
+    padding: 10px;
+    font-family: 'Oswald', sans-serif; }
+    #contact address p {
+      margin-bottom: 0; }
+  #contact #contactBox {
+    padding: 10px;
+    margin-bottom: 30px; }
 
 /*
 =============================================================================================================
@@ -244,7 +255,8 @@ footer {
     height: 300px; }
     @media (max-width: 767px) {
       #booking .barber-image img {
-        margin-bottom: 30px; } }
+        margin-bottom: 30px;
+        height: 200px !important; } }
   #booking .barber-text h2 {
     font-family: 'Oswald', sans-serif;
     font-size: 24px;
@@ -258,8 +270,19 @@ footer {
     font-weight: 400;
     letter-spacing: 3.6px;
     line-height: 30px;
-    color: #666666;
-    text-align: center; }
+    color: #666666; }
+  #booking .barber-text .btn-main {
+    background: none;
+    cursor: pointer;
+    outline: none;
+    border-color: #2B1D11;
+    color: #2B1D11;
+    overflow: hidden;
+    z-index: 1; }
+    #booking .barber-text .btn-main:hover {
+      color: #fff;
+      background-color: #2B1D11;
+      border-color: #2B1D11; }
 
 #map {
   height: 400px;

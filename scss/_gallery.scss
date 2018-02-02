@@ -15,6 +15,7 @@
 
             &:hover, &:focus, &.active {
                 color: $brand-color;
+                border-bottom: 1px solid $brand-color;
             }
         }
     }
