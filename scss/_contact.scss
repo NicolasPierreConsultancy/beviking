@@ -26,16 +26,25 @@
         }
     }
 
+    #contactBox{
+        padding: 10px;
+        margin-bottom: 30px;
+    }
+}
+
+#address{
+    padding-top: 30px;
+    padding-bottom: 10px;
+    h1{
+        @include screen('mobile'){
+            padding-top: 30px;
+        }
+    }
     address{
         padding: 10px;
         @include text-font;
         p{
             margin-bottom: 0;
         }
-    }
-
-    #contactBox{
-        padding: 10px;
-        margin-bottom: 30px;
     }
 }

@@ -33,6 +33,7 @@
 
         p {
             @include text-font;
+            margin-top: 15px;
             font-size: 15px;
             font-weight: 400;
             letter-spacing: 3.6px;
