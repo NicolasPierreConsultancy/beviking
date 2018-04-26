@@ -39,6 +39,10 @@
 
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ml-auto">
+                            <li><a class="nav-link" href="{{ route('login') }}">{{ __('Services') }}</a></li>
+                            <li><a class="nav-link" href="{{ route('login') }}">{{ __('Gallery') }}</a></li>
+                            <li><a class="nav-link" href="{{ route('login') }}">{{ __('Book') }}</a></li>
+                            <li><a class="nav-link" href="{{ route('login') }}">{{ __('Contact') }}</a></li>
                         <!-- Authentication Links -->
                         @guest
                             <li><a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a></li>
