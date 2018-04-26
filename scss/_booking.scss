@@ -16,7 +16,6 @@
 
             @include screen('mobile'){
                 margin-bottom: 30px;
-                height: 200px !important;
             }
         }
     }
@@ -33,10 +32,8 @@
 
         p {
             @include text-font;
-            margin-top: 15px;
             font-size: 15px;
             font-weight: 400;
-            letter-spacing: 3.6px;
             line-height: 30px;
             color: #666666;
         }

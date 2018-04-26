@@ -38,12 +38,11 @@ html {
     font-family: 'Oswald', sans-serif;
     font-weight: 300;
     line-height: 56px;
-    font-size: 28px; }
+    font-size: 18px; }
     @media (min-width: 768px) {
       .main h1 {
-        font-size: 60px;
-        letter-spacing: -0.3px;
-        margin-bottom: 20px; } }
+        font-size: 25px;
+        letter-spacing: -0.3px; } }
   .main .vcenter {
     width: 100%;
     position: absolute;
@@ -233,21 +232,12 @@ footer {
     #contact .btn-send:hover {
       background-color: #2B1D11;
       color: #fff; }
-  #contact #contactBox {
-    padding: 10px;
-    margin-bottom: 30px; }
-
-#address {
-  padding-top: 30px;
-  padding-bottom: 10px; }
-  @media (max-width: 767px) {
-    #address h1 {
-      padding-top: 30px; } }
-  #address address {
-    padding: 10px;
-    font-family: 'Oswald', sans-serif; }
-    #address address p {
+  #contact address {
+    padding: 10px; }
+    #contact address p {
       margin-bottom: 0; }
+  #contact #contactForm {
+    padding: 10px; }
 
 /*
 =============================================================================================================
@@ -262,8 +252,7 @@ footer {
     height: 300px; }
     @media (max-width: 767px) {
       #booking .barber-image img {
-        margin-bottom: 30px;
-        height: 200px !important; } }
+        margin-bottom: 30px; } }
   #booking .barber-text h2 {
     font-family: 'Oswald', sans-serif;
     font-size: 24px;
@@ -273,10 +262,8 @@ footer {
     text-align: center; }
   #booking .barber-text p {
     font-family: 'Oswald', sans-serif;
-    margin-top: 15px;
     font-size: 15px;
     font-weight: 400;
-    letter-spacing: 3.6px;
     line-height: 30px;
     color: #666666; }
   #booking .barber-text .btn-main {
@@ -293,5 +280,5 @@ footer {
       border-color: #2B1D11; }
 
 #map {
-  height: 350px;
+  height: 400px;
   width: 100%; }
