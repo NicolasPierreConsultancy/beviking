@@ -62,6 +62,18 @@
                                 </div>
                             </li>
                         @endguest
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img class="p-2" src="/images/flags/{{App::getLocale()}}.png"/> {{ trans('languages.'. App::getLocale()) }}
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                @foreach (Config::get('app.languages') as $language)
+                                @if ($language != App::getLocale())
+                                    <a class="dropdown-item" href="{{ route('langroute', $language) }}"><img class="p-2" src="/images/flags/{{$language}}.png"/>{{ trans('languages.'. $language) }}</a>
+                                @endif
+                                @endforeach
+                            </div>
+                        </li>
                     </ul>
                 </div>
             </div>
