@@ -1,4 +1,6 @@
 /// <reference path="_mixins.scss" />
+$facebook-color: #3B5998;
+$instagram-color: #1D5C7F;
 
 body,
 html{
@@ -112,5 +114,59 @@ footer {
         @include text-font;
         font-size: 16px;
         margin: 0;
+    }
+
+    .copy{
+        
+    }
+
+    .social-network {
+        > li {
+            > a {
+                display: inline-block;
+                position: relative;
+                margin: 0 auto 0 auto;
+                -moz-border-radius: 50%;
+                -webkit-border-radius: 50%;
+                border-radius: 50%;
+                text-align: center;
+                width: 50px;
+                height: 50px;
+                font-size: 20px;
+                border: 1px solid #fff;
+                &.icoFacebook{
+                    &:hover{
+                        background-color: $facebook-color;
+                        border-color: $facebook-color;
+                    }
+                }
+
+                &.icoInstagram{
+                    &:hover{
+                        background-color: $instagram-color;
+                        border-color:$instagram-color;
+                    }
+                }
+
+                &:hover{
+                    -moz-transform: rotate(360deg);
+                    -webkit-transform: rotate(360deg);
+                    -ms--transform: rotate(360deg);
+                    transform: rotate(360deg);
+                    -webkit-transition: all 0.2s;
+                    -moz-transition: all 0.2s;
+                    -o-transition: all 0.2s;
+                    -ms-transition: all 0.2s;
+                    transition: all 0.2s;
+                }
+
+                > i {
+                    margin:0;
+                    line-height:50px;
+                    text-align: center;
+                    color: #fff;
+                }
+            }
+        }
     }
 }

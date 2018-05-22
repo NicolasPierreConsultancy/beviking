@@ -107,6 +107,39 @@ footer {
     font-family: 'Oswald', sans-serif;
     font-size: 16px;
     margin: 0; }
+  footer .social-network > li > a {
+    display: inline-block;
+    position: relative;
+    margin: 0 auto 0 auto;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    border: 1px solid #fff; }
+    footer .social-network > li > a.icoFacebook:hover {
+      background-color: #3B5998;
+      border-color: #3B5998; }
+    footer .social-network > li > a.icoInstagram:hover {
+      background-color: #1D5C7F;
+      border-color: #1D5C7F; }
+    footer .social-network > li > a:hover {
+      -moz-transform: rotate(360deg);
+      -webkit-transform: rotate(360deg);
+      -ms--transform: rotate(360deg);
+      transform: rotate(360deg);
+      -webkit-transition: all 0.2s;
+      -moz-transition: all 0.2s;
+      -o-transition: all 0.2s;
+      -ms-transition: all 0.2s;
+      transition: all 0.2s; }
+    footer .social-network > li > a > i {
+      margin: 0;
+      line-height: 50px;
+      text-align: center;
+      color: #fff; }
 
 #mainNav {
   font-family: 'Poppins', sans-serif;
